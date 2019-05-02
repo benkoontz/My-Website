@@ -15,6 +15,11 @@ li {
 	padding-right: 33px;
 }
 
+#user {
+	
+	text-align: right;
+}
+
 
 ul a{
 	text-decoration: none;
@@ -25,12 +30,24 @@ ul a:hover {
 	text-decoration: underline;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   font-family: "Times New Roman";
   font: 24pt;
   color: #1c8a8d;
 }
+
+#name, #password {
+	background-color: #CDE4EC;
+}
+
+#login {
+	text-align: right;
+}
+
+
+
+
 
 p {
   font-family: "Calibri";
