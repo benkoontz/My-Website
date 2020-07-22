@@ -1,14 +1,9 @@
 body {
-  background: #eaebed;
+  
   text-align: center;
 }
 
-#main {
 
-  background: #ffffff;
-  margin: 25px auto;
-  padding: 10px;
-}
 
 li {
 	display: inline;
@@ -71,5 +66,11 @@ p {
 
 footer {
   background: #eaebed;
+  background-color: #10F2F3;
   text-align: center;
+}
+
+#top {
+	text-align: center;
+	background-color: #10F2F3;
 }
