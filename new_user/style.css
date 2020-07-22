@@ -43,3 +43,16 @@ ul a:hover {
 	text-align: center;
 	background-color: #10F2F3;
 }
+
+/* Create two columns/boxes that floats next to each other */
+#right_nav {
+  float: right;
+  right: 0;
+  top: 34px;
+  width: 30%;
+  height: 327px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  padding-bottom: 100px;
+  position: absolute;
+}
