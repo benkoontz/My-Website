@@ -16,7 +16,7 @@
 	<li><a href="../gallery/gallery.html">gallery</a></li>
 </ul>
 
-listen to music:
+listen to music Ben Likes:
 
 	<div id = "music">
 	<!-- function to play music when you click a button -->
@@ -25,11 +25,19 @@ listen to music:
         var audio = document.getElementById("audio");
         audio.play();
       }
+	  function pause() {
+	    var audio = document.getElementById("audio");
+        audio.pause();
+	  }
     </script>
 
     <input type="button" value="Listen to Music" onclick="play()">
     <audio id="audio" src="music.mp3"></audio>
 	<!-- end -->
+	<!-- pause -->
+	<input type="button" value="Pause Music" onclick="pause()">
+    <audio id="audio" src="music.mp3"></audio>
+	
 	</div>
 
   <footer>
