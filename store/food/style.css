@@ -18,6 +18,7 @@ li {
 #food_options{
 	text-decoration: none;
 	color: blue;
+	font-family: Arial;
 	
 }
 
@@ -29,6 +30,7 @@ li {
 ul a{
 	text-decoration: none;
 	color: blue;
+	font-family: Arial;
 }
 
 ul a:hover {
