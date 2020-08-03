@@ -15,6 +15,31 @@ li {
 	
 }
 
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 450px;
+  background: #ccc;
+  padding: 0px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 0px;
+  width: 1200px;
+  background-color: #f1f1f1;
+  height: 450px; 
+}
+
+
+
 
 ul a{
 	text-decoration: none;
