@@ -20,25 +20,19 @@
 </div>
 
 <br>
-<button onclick="move()">Next</button> 
-<button onclick="move_two()">Next</button> 
+<button onclick="move()">Transportation Type</button> 
+<button onclick="move_two()">Duration</button> 
+<button onclick="move_three()">Hotel Choice</button> 
+<button onclick="move_four()">Checkout</button> 
+
 
 <script>
 var i = 0;
 function move() {
   if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
- //       i = 0;
-      } else {
-        elem.style.width += "250px";
-      }
-    }
+     
+    var elem = document.getElementById("myBar"); // set width of the baar
+	        elem.style.width = "25%";
   }
 }
 </script>
@@ -47,18 +41,31 @@ function move() {
 var i = 0;
 function move_two() {
   if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-   //     i = 0;
-      } else {
-        elem.style.width += "500px";
-      }
-    }
+    
+    var elem = document.getElementById("myBar"); // set width of the baar
+	        elem.style.width = "50%";
+  }
+}
+</script>
+
+<script>
+var i = 0;
+function move_three() {
+  if (i == 0) {
+    
+    var elem = document.getElementById("myBar"); // set width of the baar
+	        elem.style.width = "75%";
+  }
+}
+</script>
+
+<script>
+var i = 0;
+function move_four() {
+  if (i == 0) {
+    
+    var elem = document.getElementById("myBar"); // set width of the baar
+	        elem.style.width = "100%";
   }
 }
 </script>
