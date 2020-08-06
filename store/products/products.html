@@ -15,7 +15,53 @@
 </ul>
 
 
-	<img src = "" id = "img"/> 
+<div class="dropdown">
+<!-- when the button is clicked allow the user to search -->
+  <button onclick="myFunction()" class="dropbtn">Search</button>
+  
+  <!-- create the dropdown and the content for the dropdwon -->
+  <div id="myDropdown" class="dropdown-content">
+  <!-- get the input -->
+    <input type="text" placeholder="Search here" id="myInput" onkeyup="filterFunction()">
+    <a href="#about">Food</a>
+    <a href="#base">House Supplies</a>
+    <a href="#blog">Electronics</a>
+    <a href="#contact">Video Games</a>
+    <a href="#custom">Outdoor</a>
+    <a href="#support">Personal Wellness</a>
+    <a href="#tools">Entertainment</a>
+  </div>
+</div>
+
+<script>
+<!-- When the user clicks the button, display the search. When the user clicks the button again, hide the search -->
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+<!-- create the filter to filter through each of the options-->
+function filterFunction() {
+<!-- create variables -->
+  var input, filter, ul, li, a, i;
+  <!-- create an input variable to capture the input -->
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  <!-- get the dropdown -->
+  div = document.getElementById("myDropdown");
+  <!-- get the element by the name -->
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+  <!-- get the text from anywhere in the string -->
+    txtValue = a[i].textContent || a[i].innerText;
+	<!-- if the tex matches, display the text -->
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
 
 	  <footer>
   </footer>
